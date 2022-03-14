@@ -130,6 +130,10 @@ input[type=button] {
   border-radius: 1.0em 1.0em 0 0;
 }
 
+.cliente-nombre__small {
+  font-size: 0.5em;
+}
+
 .cliente-datos {
   background: #cfcfea;
   padding: 0.2em 0.2em 0.2em 0.2em;
