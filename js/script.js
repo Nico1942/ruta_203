@@ -185,17 +185,16 @@ function dia_sig() {
 }
 
 function Eliminar(AA) {
-  var hoy, lista, abc;
+ // var hoy, lista, abc;
 
-  lista = document.getElementById("dias");
-  hoy = new Date();
-  dia = lista.selectedIndex;
-  abc = document.getElementById("ABC").checked;
-  if (dia == hoy.getDay()) {
-    if (!abc) {
-      sessionStorage.C_Hoy = Number(sessionStorage.C_Hoy) - 1;
-      document.getElementById("cli_quedan").innerHTML = sessionStorage.C_Hoy + "/";
-    };
+//  lista = document.getElementById("dias");
+//  hoy = new Date();
+//  dia = lista.selectedIndex;
+//  abc = document.getElementById("ABC").checked;
+//  if (dia == hoy.getDay()) {
+//    if (!abc) {
+//      sessionStorage.C_Hoy = Number(sessionStorage.C_Hoy) - 1;/      document.getElementById("cli_quedan").innerHTML = sessionStorage.C_Hoy + "/";
+//    };
     AA.parentElement.style.display = "none";
-  };
-}
+//  };
+//}
