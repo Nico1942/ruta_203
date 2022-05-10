@@ -92,10 +92,10 @@ function ruta_hoy(Primero) { /* Primero indica si es la primera vez que
   dia = hoy.getDay();
 
   // Obtengo la cantidad total de clientes por día
-  var lunes = document.getElementById("Lunes").childElementCount;
+  var lunes = document.getElementById("Lunes").childElementCount - 1;
   var martes = document.getElementById("Martes").childElementCount;
   var miercoles = document.getElementById("Miercoles").childElementCount;
-  var jueves = document.getElementById("Jueves").childElementCount;
+  var jueves = document.getElementById("Jueves").childElementCount -1;
   var viernes = document.getElementById("Viernes").childElementCount;
 
   lista = document.getElementById("dias")
@@ -198,4 +198,15 @@ function Eliminar(AA) {
     };
     AA.parentElement.style.display = "none";
   };
+
+  if ( sessionStorage.C_Hoy == 0) {
+    if (hoy.getDay() == 1) {
+      const Copol = document.querySelector("#Copol");
+      Copol.style.display = "block";
+    }
+    if (hoy.getDay() == 4) {
+      const Copol = document.querySelector("#Copol2");
+      Copol.style.display = "block";
+    }
+  }
 }
