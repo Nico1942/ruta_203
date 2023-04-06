@@ -39,8 +39,8 @@ function Ruta_dia(dia) { //Función que devuelve la ruta del día.
       contador.innerHTML = sessionStorage.C_Miercoles;
       break;
     case 4:
-      document.getElementById("Jueves").style.display = "block";
-      contador.innerHTML = sessionStorage.C_Jueves;
+      document.getElementById("Viernes").style.display = "block"; // Original Jueves
+      contador.innerHTML = sessionStorage.C_Viernes; // Original: C_Jueves
       break;
     case 5:
       document.getElementById("Viernes").style.display = "block";
@@ -120,7 +120,7 @@ function ruta_hoy(Primero) { /* Primero indica si es la primera vez que
         sessionStorage.setItem("C_Hoy", miercoles);
         break;
       case 4:
-        sessionStorage.setItem("C_Hoy", jueves);
+        sessionStorage.setItem("C_Hoy", viernes); // Original jueves
         break;
       case 5:
         sessionStorage.setItem("C_Hoy", viernes);
@@ -191,13 +191,13 @@ function Eliminar(AA) {
   hoy = new Date();
   dia = lista.selectedIndex;
   abc = document.getElementById("ABC").checked;
-  if (dia == hoy.getDay()) {
+  // if (dia == hoy.getDay()) {
     if (!abc) {
       sessionStorage.C_Hoy = Number(sessionStorage.C_Hoy) - 1;
       document.getElementById("cli_quedan").innerHTML = sessionStorage.C_Hoy + "/";
     };
     AA.parentElement.style.display = "none";
-  };
+  // };
 
   if ( sessionStorage.C_Hoy == 0) {
     if (hoy.getDay() == 1) {

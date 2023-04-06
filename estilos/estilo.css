@@ -74,6 +74,7 @@ nav {
 
 select {
   margin: 0.3em;
+  padding: 0.1em;
   border-radius: 0.5em;
   border-style: none;
   background-color: white;
