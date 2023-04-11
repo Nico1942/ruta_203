@@ -39,8 +39,8 @@ function Ruta_dia(dia) { //Función que devuelve la ruta del día.
       contador.innerHTML = sessionStorage.C_Miercoles;
       break;
     case 4:
-      document.getElementById("Viernes").style.display = "block"; // Original Jueves
-      contador.innerHTML = sessionStorage.C_Viernes; // Original: C_Jueves
+      document.getElementById("Jueves").style.display = "block";
+      contador.innerHTML = sessionStorage.C_Jueves;
       break;
     case 5:
       document.getElementById("Viernes").style.display = "block";
@@ -120,7 +120,7 @@ function ruta_hoy(Primero) { /* Primero indica si es la primera vez que
         sessionStorage.setItem("C_Hoy", miercoles);
         break;
       case 4:
-        sessionStorage.setItem("C_Hoy", viernes); // Original jueves
+        sessionStorage.setItem("C_Hoy", jueves);
         break;
       case 5:
         sessionStorage.setItem("C_Hoy", viernes);
