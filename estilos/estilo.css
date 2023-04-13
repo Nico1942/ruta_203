@@ -224,10 +224,6 @@ input[type=button] {
   transition: all 0.5s;
 }
 
-.iva-btn {
-  right: 0.3em;
-}
-
 /*#btn-menu, #btn-iva {display: none;}*/
 
 #btn-menu:checked ~ #opciones { left: 0; }
