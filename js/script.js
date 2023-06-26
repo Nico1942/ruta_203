@@ -191,13 +191,13 @@ function Eliminar(AA) {
   hoy = new Date();
   dia = lista.selectedIndex;
   abc = document.getElementById("ABC").checked;
-  // if (dia == hoy.getDay()) {
+  if (dia == hoy.getDay()) {
     if (!abc) {
       sessionStorage.C_Hoy = Number(sessionStorage.C_Hoy) - 1;
       document.getElementById("cli_quedan").innerHTML = sessionStorage.C_Hoy + "/";
     };
     AA.parentElement.style.display = "none";
-  // };
+  };
 
   if ( sessionStorage.C_Hoy == 0) {
     if (hoy.getDay() == 1) {
